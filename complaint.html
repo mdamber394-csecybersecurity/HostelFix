@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Complaint | HostelFix</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🏠 HostelFix</div>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="complaint.html">Student Complaint</a>
+        <a href="admin.html">Admin Panel</a>
+    </nav>
+</header>
+
+<main class="page">
+
+    <div class="form-container">
+
+        <h1>Student Complaint Form</h1>
+
+        <p class="subtitle">
+            Report your hostel problem below.
+        </p>
+
+        <form id="complaintForm">
+
+            <label for="studentName">Student Name</label>
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="roomNumber">Room Number</label>
+
+            <input
+                type="text"
+                id="roomNumber"
+                placeholder="Example: A-101"
+                required
+            >
+
+            <label for="category">Problem Category</label>
+
+            <select id="category" required>
+
+                <option value="">Select category</option>
+
+                <option value="Electricity">Electricity</option>
+
+                <option value="Water">Water</option>
+
+                <option value="Cleaning">Cleaning</option>
+
+                <option value="Furniture">Furniture</option>
+
+                <option value="Internet">Internet</option>
+
+                <option value="Other">Other</option>
+
+            </select>
+
+            <label for="description">Problem Description</label>
+
+            <textarea
+                id="description"
+                rows="5"
+                placeholder="Describe your problem..."
+                required
+            ></textarea>
+
+            <button type="submit" class="btn full">
+                Submit Complaint
+            </button>
+
+        </form>
+
+        <div id="result" class="result"></div>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 HostelFix | Smart Hostel Maintenance System</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
