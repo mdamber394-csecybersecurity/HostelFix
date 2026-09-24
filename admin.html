@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Panel | HostelFix</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">🏠 HostelFix</div>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav id="navigation">
+
+        <a href="index.html">Home</a>
+
+        <a href="complaint.html">Student Complaint</a>
+
+        <a href="admin.html">Admin Panel</a>
+
+    </nav>
+
+</header>
+
+
+<main class="page">
+
+    <div class="admin-container">
+
+        <h1>Admin Dashboard</h1>
+
+        <p class="subtitle">
+            Hostel complaint management dashboard
+        </p>
+
+
+        <div class="admin-actions">
+
+            <button id="refreshBtn" class="btn">
+                🔄 Refresh Complaints
+            </button>
+
+            <button id="clearBtn" class="btn danger">
+                🗑 Clear Demo Data
+            </button>
+
+        </div>
+
+
+        <div id="complaintList">
+
+            <p class="empty">
+                Loading complaints...
+            </p>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 HostelFix | Smart Hostel Maintenance System</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
